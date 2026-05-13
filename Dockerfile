@@ -1,5 +1,5 @@
 # 1. JDK 이미지를 베이스로 사용
-FROM openjdk:17-jdk-slim
+FROM amazoncorretto:17-alpine-jdk
 
 # 2. 애플리케이션 JAR 파일을 컨테이너로 복사
 ARG JAR_FILE=build/libs/*.jar
